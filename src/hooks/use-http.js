@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import { notification } from "antd";
 import Services from "../util/API/service";
-import { deleteAuthDetails } from "../util/API/authStorage";
+// import { deleteAuthDetails } from "../util/API/authStorage";
 const useHttp = () => {
   const [isLoading, setIsLoading] = useState(false);
 

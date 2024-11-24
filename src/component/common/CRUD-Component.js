@@ -1,18 +1,19 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import { Button, Col, DatePicker, Pagination, Popconfirm, Result, Row } from "antd";
+import { Button, Col, DatePicker, Pagination, Row } from "antd";
 import moment from "moment";
 import PropTypes from "prop-types";
 // import PageHeader from "../../../../component/common/page-Header";
-import {
-  DeleteOutlined,
-  DownloadOutlined,
-  EditOutlined,
-  EyeOutlined,
-  CheckCircleTwoTone,
-  CloseCircleTwoTone,
-} from "@ant-design/icons";
+// import {
+//   DeleteOutlined,
+//   DownloadOutlined,
+//   EditOutlined,
+//   EyeOutlined,
+//   CheckCircleTwoTone,
+//   CloseCircleTwoTone,
+// } from "@ant-design/icons";
 import useHttp from "../../hooks/use-http";
-import CONSTANTS from "../../util/constant/CONSTANTS";
 import ModalFormCreator from "./ModalFormCreator";
 import CRUDTable from "./CRUD-Table";
 import CustomSearchBar from "./Custom-search";

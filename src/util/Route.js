@@ -6,8 +6,6 @@ import AppLayout from "../component/layout/AppLayout";
 import { appRoot } from "./constant/CONSTANTS";
 
 import DeliveryPerson from "../page/app/delivery-person";
-import Inquiry from "../page/app/inquiry";
-import Request from "../page/app/request";
 
 export const ROUTES = {
 

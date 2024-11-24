@@ -1,4 +1,4 @@
-import { setCookie, getCookie, eraseCookie } from "../Cookies";
+import { eraseCookie } from "../Cookies";
 
 export const getAuthToken = () => {
   return localStorage.getItem("token");

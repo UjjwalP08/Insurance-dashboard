@@ -39,7 +39,7 @@ const FormFields = ({
       : menuFields;
   const getInputFormate = (data) => {
     const normFile = (e) => {
-      // console.log("Upload event:", e);
+      console.log("Upload event:", e, selectedOption);
       if (Array.isArray(e)) {
         return e;
       }

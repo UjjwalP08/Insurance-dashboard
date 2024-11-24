@@ -4,8 +4,8 @@ import Heading from '../../../component/common/Heading'
 import CRUDComponent from '../../../component/common/CRUD-Component'
 import CONSTANTS from '../../../util/constant/CONSTANTS'
 import { convertLocalToUTC } from '../../../util/functions'
-import moment from 'moment'
-import dayjs from 'dayjs'
+// import moment from 'moment'
+// import dayjs from 'dayjs'
 
 const DeliveryPerson = () => {
     return (

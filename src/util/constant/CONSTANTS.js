@@ -672,25 +672,7 @@ const CONSTANTS = {
         endpoint: "/admin/delivery-person/",
       },
     },
-    // Delivery Person Api
-    delivery_person: {
-      getAll: {
-        type: "GET",
-        endpoint: "/admin/delivery-person",
-      },
-      add: {
-        type: "POST",
-        endpoint: "/admin/delivery-person",
-      },
-      update: {
-        type: "PATCH",
-        endpoint: "/admin/delivery-person/",
-      },
-      delete: {
-        type: "DELETE",
-        endpoint: "/admin/delivery-person/",
-      },
-    },
+
     // Bill Api
     BILL: {
       getAll: {

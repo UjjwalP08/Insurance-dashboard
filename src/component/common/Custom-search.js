@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { AutoComplete, Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import useHttp from "../../hooks/use-http";
+// import useHttp from "../../hooks/use-http";
 const CustomSearchBar = ({
   // endpointAPI = "/clubs/search",
-  setKeyword = () => {},
-  
+  setKeyword = () => { },
+
   // dataResponseHandle = (res) => res?.data?.clubs,
   // onValueIsSelected = (v) => {
   //   console.log(v);
@@ -62,16 +62,16 @@ const CustomSearchBar = ({
       clearTimeout(fetchTimeout);
     };
   }, [fetchTimeout]);
-  const getNestedValue = (obj, path) => {
-    let value = obj;
-    for (let i = 0; i < path.length; i++) {
-      value = value[path[i]];
-      if (!value) {
-        return undefined;
-      }
-    }
-    return value;
-  };
+  // const getNestedValue = (obj, path) => {
+  //   let value = obj;
+  //   for (let i = 0; i < path.length; i++) {
+  //     value = value[path[i]];
+  //     if (!value) {
+  //       return undefined;
+  //     }
+  //   }
+  //   return value;
+  // };
   return (
     <>
       <AutoComplete

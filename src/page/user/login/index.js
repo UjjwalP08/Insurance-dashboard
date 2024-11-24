@@ -17,7 +17,7 @@ const LogIn = () => {
       // console.log(isLogin, "loh2", getAuthToken());
       navigate(appRoot);
     }
-  }, []);
+  }, [navigate]);
   // navigate(appRoot);
   const API = useHttp();
 

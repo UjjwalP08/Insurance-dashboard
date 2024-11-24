@@ -63,7 +63,7 @@ const AppLayout = () => {
     // } else {
     //   setUserData(...CONSTANTS.GETMe);
     // }
-  }, []);
+  }, [api, navigate]);
   const toggleCollapsed = () => {
     setCollapsed((prev) => !prev);
   };

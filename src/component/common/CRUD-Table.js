@@ -8,7 +8,7 @@ const CRUDTable = (props) => {
   const {
     dataSource,
     Other = {},
-    onChange,
+    // onChange,
     extraclass,
     isLoading = false,
     APIendpoint,
@@ -23,17 +23,17 @@ const CRUDTable = (props) => {
   } = props;
   const API = useHttp();
   const [selectedRows, setSelectedRows] = useState([]);
-  const rowSelection = {
-    onChange: DeleteSelectedRow
-      ? (selectedRowKeys, selectedRows) => {
-        setSelectedRows(selectedRowKeys);
-      }
-      : onChange,
-    getCheckboxProps: (record) => ({
-      disabled: record.name === "Disabled User",
-      name: record.name,
-    }),
-  };
+  // const rowSelection = {
+  //   onChange: DeleteSelectedRow
+  //     ? (selectedRowKeys, selectedRows) => {
+  //       setSelectedRows(selectedRowKeys);
+  //     }
+  //     : onChange,
+  //   getCheckboxProps: (record) => ({
+  //     disabled: record.name === "Disabled User",
+  //     name: record.name,
+  //   }),
+  // };
   return (
     <>
       {selectedRows.length && DeleteSelectedRow ? (
