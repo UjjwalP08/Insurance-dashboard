@@ -1,10 +1,8 @@
 export const userExportData = [
-    ["no", "User Id"],
-    ["profilePic", "Profile"],
-    ["name", "Name"],
-    ["userName", "User Name"],
-    ["mobile", "Mobile Number"],
-    ["privateAcc", "Private account"],
-    ["isBlocked", "Block User"],
-    
+    ["noD", "No"],
+    ["billNo", "Bill No."],
+    ["billingDate", "Billing Date"],
+    ["amountD", "Bill Amount"],
+    ["billImageD", "Bill Image"],
+
 ];

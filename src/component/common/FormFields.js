@@ -23,8 +23,6 @@ import dayjs from "dayjs";
 import FormList from "antd/es/form/FormList";
 import TextEditor from "./Text-Editor";
 import Heading from "./Heading";
-import { convertUTCToLocal } from "../../util/functions";
-import moment from "moment";
 
 const FormFields = ({
   changedFields = {},
