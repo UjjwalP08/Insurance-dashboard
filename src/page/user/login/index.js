@@ -47,7 +47,7 @@ const LogIn = () => {
 
       <div
         className="h-screen flex justify-center  items-center"
-        style={{ background: "#afc9b5" }}
+        style={{ background: "#f6f6f6" }}
       >
         <Row className="">
           <Col span={11} sm={24} xs={24} md={11} lg={11}>
