@@ -435,7 +435,7 @@ export const payloadGenerator = (value, fields, isFormData, type = 'add') => {
         // if (dateTime) {
         const dateTimeValue = `${moment(value[ele.id].$d).format(
           "YYYY-MM-DD"
-        )} ${moment(value[ele.id].$d, "HH:mm:ss").utc().format("HH:mm:ss")}`;
+        )}`;
 
         value[ele.id] && formPayload.append(ele.id, dateTimeValue);
       }

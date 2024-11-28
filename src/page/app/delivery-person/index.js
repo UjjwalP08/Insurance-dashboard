@@ -14,7 +14,7 @@ const DeliveryPerson = () => {
                 <Heading>Bill</Heading>
                 <Row>
                     <CRUDComponent
-
+                        isSearch
                         GET={{
                             API: CONSTANTS.API.BILL.getAll,
 
@@ -48,8 +48,8 @@ const DeliveryPerson = () => {
                         }}
                         CREATE={{
                             API: CONSTANTS.API.BILL.add,
-                            message: "Add Delivery Person successfully",
-                            modaltitle: "Add Delivery Person Data",
+                            message: "Add Bill Data successfully",
+                            modaltitle: "Add Bill  Data",
                             modalFields: CONSTANTS.FORM_FIELD.BILL_MODAL,
                             isFormData: true,
                             // payloadModifier: (res) => {

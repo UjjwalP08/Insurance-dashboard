@@ -23,6 +23,8 @@ import dayjs from "dayjs";
 import FormList from "antd/es/form/FormList";
 import TextEditor from "./Text-Editor";
 import Heading from "./Heading";
+import { convertUTCToLocal } from "../../util/functions";
+import moment from "moment";
 
 const FormFields = ({
   changedFields = {},
@@ -597,6 +599,7 @@ const FormFields = ({
           formData[el.name] = parseInt(formData[el.name], 10);
         });
         Fields.filter((el) => el?.type === "date").forEach((el) => {
+          console.log(formData[el.name])
           formData[el.name] = dayjs(formData[el.name]);
         });
         Fields.filter((el) => el?.type === "time").forEach((el) => {
